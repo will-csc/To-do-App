@@ -1,2 +1,213 @@
-# To-do-App
-This is a simple project created by me, and others contributors. It was a semestral work required by UniFECAF university
+# To-do App
+
+This is a simple project created by me, and others contributors  - whom I will give their social media in the following sections. It was a semestral work required by **UniFECAF** university
+
+![Pasted image 20250420005731](https://github.com/user-attachments/assets/0410e1e7-c780-41bf-9df0-7e6c271cff00)
+
+<hr>
+
+## Project Goals
+
+- **Add a new task**: Make a new task
+- **Delete your desired task**: Delete a task
+- **Edit a task**: Be able to alter your file
+- **Filter/Organize your tasks**: Show your tasks filtered by folder, search or other
+- **Friendly interface**: A nice and guide user's interface
+
+## University Goals
+
+- [x] **Data management**
+	Already applied to the project, where the CRUD stays in the "database_functions.py"
+
+	```mathematica
+	src\
+	└── Back End\
+		└──database_function.py
+	                ```
+
+- [x] **Flowchart**
+
+- [x] **Interface para o usuário**
+
+- [x] **Data Validation**
+
+- [x] **Programming Language**
+
+- [x] **Front and Back end integration**
+
+- [x] **User authentication**
+
+- [x] Database connection
+
+- [x] User Profiles
+
+#### Fulling all of theses requirements give us a total of 3 points in ours Semester grade
+
+<hr>
+
+## Technologies Used
+
+### Backend
+
+- Python
+- MySQL
+- Sys Library
+- Os Library
+- Pathlib Library
+- Json Library and Files
+### Frontend
+
+- Tkinter
+
+<hr>
+
+## Project Structure
+
+```mathematica
+src\
+└── Back End\
+│	└── database_function.py
+│	└── SQL Script\
+│		└── sqlfile.sql
+│
+└── Front End\
+	└── assets\
+	│	└── ... (Image Files)
+	└── gui.py ... gui12.py
+	└── changewindows.py
+	└── functions.py
+	└── data_file.json
+	└── dados_login.json
+	└── Janelas e objetivo.xlsx
+```
+
+![WhatsApp Image 2025-03-16 at 11 42 30_33726fc9](https://github.com/user-attachments/assets/570036a4-d8c7-402d-ba6f-1e858b6e1134)
+
+<hr>
+
+## Installation
+
+#### Prerequisites
+ - Python
+#### Steps
+
+1. Clone this repository:
+    ```shell
+    git clone https://github.com/will-csc/To-do-App.git
+    cd your-repo
+    ```
+
+*Obs:* In the **"Back End"** folder, change the **"database_functions.py"** file and put your password and name in row 31 at **"connection()"** function.
+
+Example:
+```Sql
+def connection():
+    conexao = mysql.connector.connect(
+        host="localhost",
+        user="root",
+        password="Sny-301mv",
+        database="todo_app"
+    )
+
+    return conexao, conexao.cursor()
+1. Execute the following commands
+```cmd
+pip install requests
+pip install Pillow
+pip install Jinja2
+pip install mysql-connector-python
+pip install twilio
+```
+
+3. Execute the SQL Statement
+```sql
+DROP DATABASE IF EXISTS todo_app;
+CREATE DATABASE IF NOT EXISTS todo_app;
+USE todo_app;
+
+/*------------------ TABELA DE USUARIOS ----------------*/
+CREATE TABLE IF NOT EXISTS users(
+	id_user INT PRIMARY KEY AUTO_INCREMENT,
+	username VARCHAR(50) NOT NULL UNIQUE,
+    e_mail VARCHAR(50) NOT NULL UNIQUE,
+    phone BIGINT NOT NULL,
+    userpassword VARCHAR(50) NOT NULL,
+    retrieve_code BIGINT NOT NULL,
+    user_rank INT DEFAULT 1 NOT NULL
+);
+ALTER TABLE users ADD CONSTRAINT chk_retrieve_code CHECK (retrieve_code > 999999999);
+ALTER TABLE users ADD CONSTRAINT chk_user_rank CHECK (user_rank IN (1,2));
+
+/*------------------ TABELA DE DOCUMENTOS RELACIONADOS AO USUÁRIO ----------------*/
+CREATE TABLE IF NOT EXISTS documents(
+	id_docs INT PRIMARY KEY AUTO_INCREMENT,
+    id_user INT NOT NULL,
+    doc_name VARCHAR(100) NOT NULL,
+    doc_path VARCHAR(2500) NOT NULL UNIQUE,
+    deadline DATE NOT NULL,
+    week_day VARCHAR(10) NOT NULL,
+    FOREIGN KEY (id_user) REFERENCES users(id_user) ON DELETE
+    CASCADE ON UPDATE CASCADE
+);
+
+/*---------------- FUNÇÃO PARA PREENCHER NOME DO DIA --------------------------*/
+DELIMITER $$
+
+CREATE FUNCTION nome_dia_semana(data DATE) RETURNS VARCHAR(10)
+DETERMINISTIC
+BEGIN
+    DECLARE dia_semana INT;
+    SET dia_semana = WEEKDAY(data); -- Segunda = 0, Domingo = 6
+
+    RETURN CASE dia_semana
+        WHEN 0 THEN 'Segunda'
+        WHEN 1 THEN 'Terça'
+        WHEN 2 THEN 'Quarta'
+        WHEN 3 THEN 'Quinta'
+        WHEN 4 THEN 'Sexta'
+        WHEN 5 THEN 'Sábado'
+        WHEN 6 THEN 'Domingo'
+    END;
+END$$
+
+DELIMITER ;
+
+/*------------ TRIGGER PARA INSERÇÃO AUTOMÁTICA -----------------*/
+DELIMITER $$
+
+CREATE TRIGGER before_insert_documents
+BEFORE INSERT ON documents
+FOR EACH ROW
+BEGIN
+    SET NEW.week_day = nome_dia_semana(NEW.deadline);
+END$$
+
+DELIMITER ;
+```
+
+4. Execute the following command inside the **"Front End"** folder
+```cmd
+python gui.py
+```
+
+<hr>
+
+## Contributors
+
+Let's connect! 📫 by Mail, Linkedin or WhatsApp<br>
+
+#### William
+<div> 
+  <a href="mailto:william.cesarbds2016@gmail.com" target="_blank">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBhjb9jMA0vZYUcW8_l8msiAbEI-OY-FENyg&s" 
+         width="40" height="40" alt="Email">
+  </a>
+  <a href="https://www.linkedin.com/in/william-cesar-7b7b89202/" target="_blank">
+    <img src="https://t.ctcdn.com.br/ClbNm_AxWl6gDsKOKmnZXzmsIXI=/1080x1080/smart/i490027.jpeg" 
+         width="40" height="40" alt="LinkedIn">
+  </a> 
+    <a href="https://wa.me/5511969541207" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+         width="40" height="40" alt="WhatsApp">
+    </a>
+</div>
