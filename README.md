@@ -81,7 +81,8 @@ src\
 	└── Janelas e objetivo.xlsx
 ```
 
-![WhatsApp Image 2025-03-16 at 11 42 30_33726fc9](https://github.com/user-attachments/assets/570036a4-d8c7-402d-ba6f-1e858b6e1134)
+![Pasted image 20250420021004](https://github.com/user-attachments/assets/65b3c54e-f2e2-4d9c-8b01-29975f161867)
+
 
 <hr>
 
