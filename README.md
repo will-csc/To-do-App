@@ -17,13 +17,6 @@ This is a simple project created by me, and others contributors  - whom I will g
 ## University Goals
 
 - [x] **Data management**
-	Already applied to the project, where the CRUD stays in the "database_functions.py"
-
-	```mathematica
-	src\
-	└── Back End\
-		└──database_function.py
-	                ```
 
 - [x] **Flowchart**
 
