@@ -111,13 +111,7 @@ def connection():
     )
 
     return conexao, conexao.cursor()
-1. Execute the following commands
-```cmd
-pip install requests
-pip install Pillow
-pip install Jinja2
-pip install mysql-connector-python
-pip install twilio
+
 ```
 
 3. Execute the SQL Statement
@@ -144,7 +138,7 @@ CREATE TABLE IF NOT EXISTS documents(
 	id_docs INT PRIMARY KEY AUTO_INCREMENT,
     id_user INT NOT NULL,
     doc_name VARCHAR(100) NOT NULL,
-    doc_path VARCHAR(2500) NOT NULL UNIQUE,
+    doc_path VARCHAR(700) NOT NULL UNIQUE,
     deadline DATE NOT NULL,
     week_day VARCHAR(10) NOT NULL,
     FOREIGN KEY (id_user) REFERENCES users(id_user) ON DELETE
