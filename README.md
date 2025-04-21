@@ -107,6 +107,16 @@ def connection():
 
 ```
 
+2. Install these librarys:
+
+```cmd
+pip install requests
+pip install Pillow
+pip install Jinja2
+pip install mysql-connector-python
+pip install twilio
+```
+
 3. Execute the SQL Statement
 ```sql
 DROP DATABASE IF EXISTS todo_app;
