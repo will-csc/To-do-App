@@ -148,9 +148,12 @@ def save_file(nome_arquivo,data,user_name, conteudo):
     messagebox.showinfo("Success","Arquivo salvo com sucesso!")
     insert_docs(full_path,date_formated)
 
-def find_file(file_name):
+def find_file(file_name,deadline=""):
     name = get_name().replace('Olá ', '').replace('!', '').replace("\n","")
-    full_path = os.path.join(docs_path,name)
+    if not deadline:
+        full_path = os.path.join(docs_path,name)
+    else:
+        full_path = os.path.join(docs_path,name,deadline)
     
     for root, dirs, files in os.walk(full_path):  # Caminha recursivamente pela pasta
         if file_name + ".md" in files:
@@ -197,7 +200,14 @@ def search_file(window,name):
     open_gui(window,8)
 
 def delete_file(file_name):
-    file_path = find_file(file_name)  # Encontra o caminho do arquivo
+    with open("data_file.json", 'r') as json_file:
+        dados = json.load(json_file)
+    
+    deadline = dados["date"]
+    if deadline:
+        file_path = find_file(file_name,deadline)  # Encontra o caminho do arquivo
+    else:
+        file_path = find_file(file_name)
 
     if not file_path or not os.path.exists(file_path):
         messagebox.showerror("Erro", "Arquivo não encontrado!")
