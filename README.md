@@ -1,6 +1,6 @@
 # To-do App
 
-This is a simple project created by me, and others contributors  - whom I will give their social media in the following sections. It was a semestral work required by **UniFECAF** university
+This is a simple project created by me, and others contributors  - whom I will give their social media in the following sections. It was a semestral work required by **UniFECAF** university and the main goal is to help other people to organize their tasks with a nice app
 
 ![Pasted image 20250420005731](https://github.com/user-attachments/assets/0410e1e7-c780-41bf-9df0-7e6c271cff00)
 
