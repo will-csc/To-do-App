@@ -253,10 +253,20 @@ def update_information(window,e_mail, name, phone, password):
     valores = []
 
     # Validação do e-mail
-    if e_mail.strip() and not("Digite" in e_mail):
+    if e_mail.strip() and not("Digite" in e_mail): 
+               
         if "@" not in e_mail or len(e_mail) < 6:
             messagebox.showerror("Erro", "O e-mail informado é inválido.")
             return
+
+        # Verifica se o e-mail já existe no banco de dados
+        cursor.execute("SELECT id_user FROM users WHERE e_mail = %s AND id_user != %s", (e_mail, id_user))
+        resultado = cursor.fetchone()
+        
+        if resultado:
+            messagebox.showerror("Erro", "Este e-mail já está em uso. Escolha outro.")
+            return
+        
         campos.append("e_mail = %s")
         valores.append(e_mail)
 
