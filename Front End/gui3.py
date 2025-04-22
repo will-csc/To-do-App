@@ -277,9 +277,13 @@ password_4.place(
 )
 
 set_placeholder(nome_1, "Digite seu nome",text_color="#FFFFFF")
+nome_1.bind("<Return>",lambda event:update_information(window,e_mail_2.get(),nome_1.get(),phone_3.get(),password_4.get()))
 set_placeholder(e_mail_2, "Digite seu e-mail",text_color="#FFFFFF")
+e_mail_2.bind("<Return>",lambda event:update_information(window,e_mail_2.get(),nome_1.get(),phone_3.get(),password_4.get()))
 set_placeholder(phone_3, "Digite seu telefone",text_color="#FFFFFF")
+phone_3.bind("<Return>",lambda event:update_information(window,e_mail_2.get(),nome_1.get(),phone_3.get(),password_4.get()))
 set_placeholder(password_4, "Digite sua senha",text_color="#FFFFFF")
+password_4.bind("<Return>",lambda event:update_information(window,e_mail_2.get(),nome_1.get(),phone_3.get(),password_4.get()))
 
 #----------------- Botão de Elevar nível -----------------
 rankbutton_image_5 = relative_to_assets("button_7.png",ASSETS_PATH)
