@@ -114,6 +114,7 @@ pip install requests
 pip install Pillow
 pip install Jinja2
 pip install mysql-connector-python
+pip install --upgrade mysql-connector-python
 pip install twilio
 ```
 
