@@ -198,9 +198,9 @@ Let's connect! 📫 by Mail, Linkedin or WhatsApp<br>
 #### William
 <div> 
   <a href="mailto:william.cesarbds2016@gmail.com" target="_blank">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBhjb9jMA0vZYUcW8_l8msiAbEI-OY-FENyg&s" 
-         width="40" height="40" alt="Email">
-  </a>
+  <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" 
+       width="40" height="40" alt="Gmail">
+</a>
   <a href="https://www.linkedin.com/in/william-cesar-7b7b89202/" target="_blank">
     <img src="https://t.ctcdn.com.br/ClbNm_AxWl6gDsKOKmnZXzmsIXI=/1080x1080/smart/i490027.jpeg" 
          width="40" height="40" alt="LinkedIn">
@@ -214,10 +214,42 @@ Let's connect! 📫 by Mail, Linkedin or WhatsApp<br>
 #### Eduardo
 <div> 
   <a href="mailto:eduardo170620063103@gmail.com" target="_blank">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBhjb9jMA0vZYUcW8_l8msiAbEI-OY-FENyg&s" 
-         width="40" height="40" alt="Email">
-  </a>
-  <a href="www.linkedin.com/in/eduardooliveira1706" target="_blank">
+    <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" 
+       width="40" height="40" alt="Gmail">
+</a>
+  <a href="https://www.linkedin.com/in/eduardooliveira1706" target="_blank">
+    <img src="https://t.ctcdn.com.br/ClbNm_AxWl6gDsKOKmnZXzmsIXI=/1080x1080/smart/i490027.jpeg" 
+         width="40" height="40" alt="LinkedIn">
+  </a> 
+    <a href="https://wa.me/5511984325997" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+         width="40" height="40" alt="WhatsApp">
+    </a>
+</div>
+
+#### João
+<div> 
+  <a href="mailto:eduardo170620063103@gmail.com" target="_blank">
+    <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" 
+       width="40" height="40" alt="Gmail">
+</a>
+  <a href="https://www.linkedin.com/in/eduardooliveira1706" target="_blank">
+    <img src="https://t.ctcdn.com.br/ClbNm_AxWl6gDsKOKmnZXzmsIXI=/1080x1080/smart/i490027.jpeg" 
+         width="40" height="40" alt="LinkedIn">
+  </a> 
+    <a href="https://wa.me/5511984325997" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+         width="40" height="40" alt="WhatsApp">
+    </a>
+</div>
+
+#### Matheus
+<div> 
+  <a href="mailto:eduardo170620063103@gmail.com" target="_blank">
+    <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" 
+       width="40" height="40" alt="Gmail">
+</a>
+  <a href="https://www.linkedin.com/in/eduardooliveira1706" target="_blank">
     <img src="https://t.ctcdn.com.br/ClbNm_AxWl6gDsKOKmnZXzmsIXI=/1080x1080/smart/i490027.jpeg" 
          width="40" height="40" alt="LinkedIn">
   </a> 
