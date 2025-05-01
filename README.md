@@ -209,6 +209,9 @@ Let's connect! 📫 by Mail, Linkedin or WhatsApp<br>
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
          width="40" height="40" alt="WhatsApp">
     </a>
+<a href="https://github.com/will-csc" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="40" height="40" alt="GitHub">
+  </a>
 </div>
 
 #### Eduardo
