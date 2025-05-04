@@ -248,11 +248,11 @@ Let's connect! 📫 by Mail, Linkedin or WhatsApp<br>
 
 #### Matheus
 <div> 
-  <a href="mailto:eduardo170620063103@gmail.com" target="_blank">
+  <a href="mailto:matheusrochacontato892@gmail.com" target="_blank">
     <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" 
        width="40" height="40" alt="Gmail">
 </a>
-  <a href="https://www.linkedin.com/in/eduardooliveira1706" target="_blank">
+  <a href="https://www.linkedin.com/in/matheus-rocha-b6622b262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
     <img src="https://t.ctcdn.com.br/ClbNm_AxWl6gDsKOKmnZXzmsIXI=/1080x1080/smart/i490027.jpeg" 
          width="40" height="40" alt="LinkedIn">
   </a> 
