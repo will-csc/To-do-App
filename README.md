@@ -232,15 +232,15 @@ Let's connect! 📫 by Mail, Linkedin or WhatsApp<br>
 
 #### João
 <div> 
-  <a href="mailto:eduardo170620063103@gmail.com" target="_blank">
+  <a href="mailto:jv.timotio@gmail.com" target="_blank">
     <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" 
        width="40" height="40" alt="Gmail">
 </a>
-  <a href="https://www.linkedin.com/in/eduardooliveira1706" target="_blank">
+  <a href="https://www.linkedin.com/in/joão-morais-t/" target="_blank">
     <img src="https://t.ctcdn.com.br/ClbNm_AxWl6gDsKOKmnZXzmsIXI=/1080x1080/smart/i490027.jpeg" 
          width="40" height="40" alt="LinkedIn">
   </a> 
-    <a href="https://wa.me/5511984325997" target="_blank">
+    <a href="https://wa.me/5511993134134" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
          width="40" height="40" alt="WhatsApp">
     </a>
